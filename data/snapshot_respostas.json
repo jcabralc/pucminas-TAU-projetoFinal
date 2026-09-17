@@ -1,15 +1,77 @@
 {
   "metadata": {
     "sintetico": false,
-    "data_gravacao": "2026-09-17T15:31:03",
+    "data_gravacao": "2026-09-17T17:17:26",
     "base_url": "https://assistente-financeiro-testes.onrender.com",
-    "total_perguntas": 1,
+    "total_perguntas": 5,
     "pendentes": [
-      "tarifa_anuidade_padrao"
+      "credito_idade_minima"
     ]
   },
   "respostas": {
     "tarifa_anuidade_padrao": {
+      "message": "A anuidade do cartão padrão do Banco Aurora é de R$ 240,00 por ano, cobrada em 12 parcelas mensais de R$ 20,00 diretamente na sua fatura.\n\nVale lembrar que você pode ter isenção total (R$ 0,00) mantendo uma média de gastos acima de R$ 500,00 por mês nos últimos 6 meses.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Como ter isenção?",
+        "Outras tarifas",
+        "Solicitar cartão"
+      ],
+      "sources": [
+        "tarifas-cartao.md",
+        "politica-credito.md",
+        "termos-de-uso.md",
+        "faq-aumento-limite.md"
+      ]
+    },
+    "tarifa_juros_rotativo": {
+      "message": "A taxa de juros do crédito rotativo no Banco Aurora (aplicada caso não ocorra o pagamento integral da fatura) é de **12,5% ao mês**.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Juros de parcelamento",
+        "Tarifas de saque",
+        "Isenção de anuidade"
+      ],
+      "sources": [
+        "tarifas-cartao.md",
+        "politica-credito.md",
+        "faq-aumento-limite.md"
+      ]
+    },
+    "tarifa_segunda_via": {
+      "message": "A emissão da 2ª via do cartão físico custa **R$ 25,00**.\n\nVale destacar que a 1ª solicitação por motivo de perda ou roubo é **gratuita** (limite de 1 gratuidade por ano).",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Como pedir a 2ª via?",
+        "Ver outras tarifas",
+        "Falar com atendimento"
+      ],
+      "sources": [
+        "tarifas-cartao.md",
+        "termos-de-uso.md",
+        "politica-credito.md",
+        "faq-aumento-limite.md"
+      ]
+    },
+    "tarifa_iof_internacional": {
+      "message": "Em compras internacionais realizadas com o cartão de crédito do Banco Aurora, é cobrado o IOF de **5,38%** sobre o valor convertido. O banco não cobra nenhuma tarifa adicional por essa operação.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Ver outras tarifas",
+        "Falar no atendimento"
+      ],
+      "sources": [
+        "tarifas-cartao.md",
+        "termos-de-uso.md",
+        "politica-credito.md",
+        "faq-aumento-limite.md"
+      ]
+    },
+    "credito_idade_minima": {
       "erro": "Cota da API do provedor de IA esgotada. Verifique seu plano e limites de uso nas configurações."
     }
   }
