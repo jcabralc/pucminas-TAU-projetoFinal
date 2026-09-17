@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "sintetico": false,
+    "data_gravacao": "2026-09-17T15:31:03",
+    "base_url": "https://assistente-financeiro-testes.onrender.com",
+    "total_perguntas": 1,
+    "pendentes": [
+      "tarifa_anuidade_padrao"
+    ]
+  },
+  "respostas": {
+    "tarifa_anuidade_padrao": {
+      "erro": "Cota da API do provedor de IA esgotada. Verifique seu plano e limites de uso nas configurações."
+    }
+  }
+}
