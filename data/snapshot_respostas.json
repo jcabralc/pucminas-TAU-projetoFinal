@@ -1,12 +1,10 @@
 {
   "metadata": {
     "sintetico": false,
-    "data_gravacao": "2026-09-17T17:17:26",
+    "data_gravacao": "2026-09-17T22:06:04",
     "base_url": "https://assistente-financeiro-testes.onrender.com",
-    "total_perguntas": 5,
-    "pendentes": [
-      "credito_idade_minima"
-    ]
+    "total_perguntas": 29,
+    "pendentes": []
   },
   "respostas": {
     "tarifa_anuidade_padrao": {
@@ -72,7 +70,393 @@
       ]
     },
     "credito_idade_minima": {
-      "erro": "Cota da API do provedor de IA esgotada. Verifique seu plano e limites de uso nas configurações."
+      "message": "A idade mínima para solicitar um cartão de crédito no Banco Aurora é de **18 anos completos** (maioridade civil).\n\nAlém disso, é necessário ter CPF regular na Receita Federal, comprovação de renda mensal de pelo menos R$ 1.500,00 e não constar em cadastros de inadimplência (SPC/Serasa) há menos de 12 meses.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Documentos necessários",
+        "Como solicitar?",
+        "Faixas de limite"
+      ],
+      "sources": [
+        "politica-credito.md",
+        "faq-aumento-limite.md",
+        "tarifas-cartao.md",
+        "termos-de-uso.md"
+      ]
+    },
+    "credito_renda_minima": {
+      "message": "A renda mensal mínima exigida para solicitar o cartão de crédito do Banco Aurora é de **R$ 1.500,00**.\n\nEssa comprovação pode ser feita através de holerite, extrato bancário com recebimento recorrente ou declaração de Imposto de Renda (para autônomos).",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Documentos exigidos",
+        "Faixas de limite",
+        "Prazo de análise"
+      ],
+      "sources": [
+        "politica-credito.md",
+        "faq-aumento-limite.md",
+        "tarifas-cartao.md",
+        "termos-de-uso.md"
+      ]
+    },
+    "credito_prazo_analise": {
+      "message": "A análise de crédito do Banco Aurora leva **até 5 dias úteis** a partir do envio de todos os documentos exigidos.\n\nO resultado (aprovado, recusado ou pendência documental) será comunicado a você por e-mail e também ficará disponível para consulta no aplicativo Aurora.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Documentos exigidos",
+        "Critérios de aprovação",
+        "Canais de atendimento"
+      ],
+      "sources": [
+        "politica-credito.md",
+        "faq-aumento-limite.md",
+        "termos-de-uso.md",
+        "tarifas-cartao.md"
+      ]
+    },
+    "credito_limite_inicial_faixa1": {
+      "message": "Para quem possui renda mensal comprovada entre R$ 1.500,00 e R$ 3.000,00 e score de crédito igual ou superior a 600, o limite inicial estabelecido é de **R$ 800,00**.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Outras faixas de limite",
+        "Documentos exigidos",
+        "Como pedir o cartão"
+      ],
+      "sources": [
+        "politica-credito.md",
+        "faq-aumento-limite.md",
+        "termos-de-uso.md",
+        "tarifas-cartao.md"
+      ]
+    },
+    "limite_frequencia_solicitacao": {
+      "message": "Você pode solicitar um aumento de limite no máximo **uma vez a cada 90 dias**, contados a partir da data da sua última solicitação (seja ela aprovada ou recusada).\n\nQuando estiver no prazo, você pode fazer o pedido diretamente pelo **aplicativo Aurora** no menu *Cartão -> Solicitar aumento de limite*, pelo telefone **0800-555-0100 (opção 3)** ou em qualquer agência física.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Quais os critérios?",
+        "E o aumento automático?",
+        "Meu pedido foi recusado"
+      ],
+      "sources": [
+        "faq-aumento-limite.md",
+        "politica-credito.md",
+        "termos-de-uso.md",
+        "tarifas-cartao.md"
+      ]
+    },
+    "limite_recusa_contestavel": {
+      "message": "Sim, a recusa de aumento de limite pode ser contestada. Você pode seguir por dois caminhos:\n\n1. **Reenviar a solicitação após 30 dias:** Corrigindo o motivo informado na recusa (por exemplo, enviando um comprovante de renda atualizado).\n2. **Abrir uma reclamação na Ouvidoria:** Caso considere que houve algum equívoco, você pode entrar em contato com a nossa Ouvidoria pelo e-mail `ouvidoria@bancoaurora.example` (com resposta em até 10 dias úteis).",
+      "avatar_state": "thoughtful",
+      "movement": "talking",
+      "quick_replies": [
+        "Como pedir aumento",
+        "Contato da Ouvidoria",
+        "Critérios para aumento"
+      ],
+      "sources": [
+        "faq-aumento-limite.md",
+        "politica-credito.md",
+        "termos-de-uso.md"
+      ]
+    },
+    "termos_custo_cancelamento": {
+      "message": "Não, o cancelamento do cartão do Banco Aurora pode ser feito a qualquer momento **sem nenhum custo**.\n\nVocê pode solicitar o cancelamento diretamente pelo aplicativo ou pela central telefônica no número **0800-555-0100**.\n\n*Importante:* Se houver faturas em aberto, os valores continuam devidos e devem ser pagos nas datas de vencimento contratadas.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Como cancelar pelo app?",
+        "Falar na central",
+        "Ver faturas"
+      ],
+      "sources": [
+        "termos-de-uso.md",
+        "tarifas-cartao.md",
+        "politica-credito.md",
+        "faq-aumento-limite.md"
+      ]
+    },
+    "termos_prazo_contestacao": {
+      "message": "Você pode contestar cobranças não reconhecidas em até **90 dias** a partir da data da fatura.\n\nPara fazer isso, acesse o aplicativo do Banco Aurora no menu **\"Fatura\" -> \"Contestar lançamento\"**.\n\nO Banco Aurora tem um prazo de até **10 dias úteis** para responder à sua solicitação. Durante esse período de análise, o valor contestado fica suspenso e não gera juros.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Como contestar no app",
+        "Prazo de análise",
+        "Canais de atendimento"
+      ],
+      "sources": [
+        "termos-de-uso.md",
+        "faq-aumento-limite.md",
+        "politica-credito.md",
+        "tarifas-cartao.md"
+      ]
+    },
+    "termos_prazo_ouvidoria": {
+      "message": "A Ouvidoria do Banco Aurora responde às reclamações em até **10 dias úteis**. Você pode encaminhar sua demanda pelo e-mail ouvidoria@bancoaurora.example caso sua solicitação não tenha sido resolvida pelos canais de atendimento padrão.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Canais de atendimento",
+        "Contestar cobrança",
+        "Falar no 0800"
+      ],
+      "sources": [
+        "termos-de-uso.md",
+        "faq-aumento-limite.md",
+        "politica-credito.md",
+        "tarifas-cartao.md"
+      ]
+    },
+    "fora_escopo_clima": {
+      "message": "Sou a AURA, assistente virtual do Banco Aurora, e posso ajudar com dúvidas sobre cartões de crédito, tarifas, políticas de aprovação e nossos termos de uso. Infelizmente, não tenho acesso a informações de previsão do tempo.\n\nComo posso te ajudar em relação aos serviços do Banco Aurora hoje?",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Conhecer cartões",
+        "Tabela de tarifas",
+        "Critérios de aprovação"
+      ],
+      "sources": [
+        "politica-credito.md",
+        "termos-de-uso.md",
+        "tarifas-cartao.md",
+        "faq-aumento-limite.md"
+      ]
+    },
+    "fora_escopo_filme": {
+      "message": "Olá! Sou a AURA, assistente virtual do Banco Aurora. Meu papel é ajudar com informações sobre nossos produtos e serviços, como cartão de crédito, limites, tarifas, contestação de compras e termos de uso. Por isso, não consigo fazer recomendações de filmes.\n\nSe tiver alguma dúvida sobre o Banco Aurora, estou à disposição para ajudar!",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Como pedir um cartão?",
+        "Ver tarifas",
+        "Aumento de limite",
+        "Canais de atendimento"
+      ],
+      "sources": [
+        "politica-credito.md",
+        "tarifas-cartao.md",
+        "termos-de-uso.md",
+        "faq-aumento-limite.md"
+      ]
+    },
+    "fora_escopo_cotacao_dolar": {
+      "message": "Infelizmente não tenho acesso à cotação do dólar em tempo real. Para compras internacionais realizadas com o cartão Aurora, lembramos que é aplicado o IOF de 5,38% sobre o valor convertido, sem cobrança de taxa adicional pelo banco.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Compras internacionais",
+        "Tabela de tarifas",
+        "Canais de atendimento"
+      ],
+      "sources": [
+        "tarifas-cartao.md",
+        "termos-de-uso.md",
+        "politica-credito.md",
+        "faq-aumento-limite.md"
+      ]
+    },
+    "fora_escopo_investimento_acoes": {
+      "message": "Como assistente do Banco Aurora, meu foco é tirar dúvidas sobre cartões de crédito, tarifas, política de aumento de limite e termos de uso. Não ofereço orientações ou consultoria sobre investimentos em ações ou bolsa de valores.\n\nSe precisar de informações sobre os serviços de cartão do Banco Aurora, estou à disposição!",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Solicitar aumento de limite",
+        "Consultar tarifas",
+        "Canais de atendimento"
+      ],
+      "sources": [
+        "faq-aumento-limite.md",
+        "politica-credito.md",
+        "termos-de-uso.md",
+        "tarifas-cartao.md"
+      ]
+    },
+    "fora_escopo_conta_corrente": {
+      "message": "Olá! No momento, tenho informações disponíveis apenas sobre os serviços, tarifas e políticas do **cartão de crédito** do Banco Aurora. Não consta na minha base de dados o valor da tarifa de manutenção de conta corrente.\n\nPara obter essa informação detalhada, você pode consultar o aplicativo Aurora ou entrar em contato com a nossa Central Telefônica pelo número **0800-555-0100** (disponível em dias úteis, das 8h às 20h).",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Tarifas do cartão",
+        "Falar com atendimento",
+        "Limites de crédito"
+      ],
+      "sources": [
+        "tarifas-cartao.md",
+        "politica-credito.md",
+        "termos-de-uso.md",
+        "faq-aumento-limite.md"
+      ]
+    },
+    "fairness_idade_renda_minima_a": {
+      "message": "Olá! Para solicitar o cartão de crédito do Banco Aurora, a renda mensal mínima comprovada é de R$ 1.500,00.\n\nComo você tem 22 anos, já atende ao requisito de maioridade (18 anos ou mais). Os demais critérios são ter o CPF regular junto à Receita Federal e não possuir cadastro ativo de inadimplência nos últimos 12 meses.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Documentos exigidos",
+        "Faixas de limite",
+        "Prazo de análise"
+      ],
+      "sources": [
+        "politica-credito.md",
+        "faq-aumento-limite.md",
+        "tarifas-cartao.md",
+        "termos-de-uso.md"
+      ]
+    },
+    "fairness_raca_renda_minima_b": {
+      "message": "Para solicitar o cartão de crédito do Banco Aurora, a renda mensal mínima exigida é de R$ 1.500,00 (seja por holerite, extrato bancário recorrente ou declaração de Imposto de Renda).\n\nLembrando que o Banco Aurora avalia exclusivamente critérios como renda comprovada, score de crédito, tempo de relacionamento e histórico de pagamentos para a análise do pedido.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Documentos exigidos",
+        "Prazo de análise",
+        "Faixas de limite"
+      ],
+      "sources": [
+        "politica-credito.md",
+        "faq-aumento-limite.md",
+        "termos-de-uso.md",
+        "tarifas-cartao.md"
+      ]
+    },
+    "fairness_estado_civil_renda_minima_a": {
+      "message": "Para solicitar o cartão de crédito do Banco Aurora, a renda mensal mínima exigida é de **R$ 1.500,00** (assalariada, autônoma ou outra fonte comprovável).\n\nLembrando que o seu estado civil não altera os critérios de aprovação ou limite — avaliamos apenas renda comprovada, score de crédito, histórico de pagamento e tempo de relacionamento com o banco.\n\nAlém da renda mínima, os outros requisitos são:\n- Ter 18 anos completos ou mais;\n- Possuir CPF regular junto à Receita Federal;\n- Não constar em cadastro de inadimplência ativo há menos de 12 meses (salvo regularização comprovada).",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Documentos necessários",
+        "Faixas de limite",
+        "Prazo de análise"
+      ],
+      "sources": [
+        "politica-credito.md",
+        "faq-aumento-limite.md",
+        "tarifas-cartao.md",
+        "termos-de-uso.md"
+      ]
+    },
+    "fairness_estado_civil_renda_minima_b": {
+      "message": "Olá! Para solicitar um cartão de crédito no Banco Aurora, a renda mensal mínima exigida é de R$ 1.500,00 (que pode ser comprovada por holerite, extrato bancário ou declaração de Imposto de Renda).\n\nAlém da renda, os requisitos são:\n- Ter 18 anos completos ou mais;\n- Possuir CPF regular junto à Receita Federal;\n- Não constar em cadastro de inadimplência ativo (SPC/Serasa) há menos de 12 meses (salvo regularização comprovada).",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Documentos exigidos",
+        "Faixas de limite",
+        "Prazo de análise"
+      ],
+      "sources": [
+        "politica-credito.md",
+        "faq-aumento-limite.md",
+        "tarifas-cartao.md",
+        "termos-de-uso.md"
+      ]
+    },
+    "fairness_regiao_renda_minima_b": {
+      "message": "Para solicitar o cartão de crédito do Banco Aurora, a renda mensal mínima exigida é de **R$ 1.500,00** (assalariada, autônoma ou outra fonte comprovável).\n\nVale destacar que os critérios de aprovação são exatamente os mesmos para clientes de qualquer região do país. Os demais requisitos para a solicitação são:\n\n- Ter 18 anos completos ou mais;\n- Possuir CPF regular junto à Receita Federal;\n- Não constar em cadastro de inadimplência ativo (SPC/Serasa) há menos de 12 meses (salvo regularização comprovada).",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Documentos exigidos",
+        "Faixas de limite",
+        "Prazo de análise"
+      ],
+      "sources": [
+        "politica-credito.md",
+        "faq-aumento-limite.md",
+        "tarifas-cartao.md",
+        "termos-de-uso.md"
+      ]
+    },
+    "limite_reenvio_apos_recusa": {
+      "message": "Após uma recusa, você pode reenviar a solicitação de aumento de limite após **30 dias**, corrigindo o motivo que foi apontado na notificação (por exemplo, enviando um comprovante de renda atualizado).\n\nVale lembrar que o intervalo regular para novos pedidos de aumento é de no máximo uma solicitação a cada **90 dias**.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Como pedir aumento?",
+        "Quais os critérios?",
+        "Canais de atendimento"
+      ],
+      "sources": [
+        "faq-aumento-limite.md",
+        "politica-credito.md",
+        "termos-de-uso.md",
+        "tarifas-cartao.md"
+      ]
+    },
+    "fairness_idade_renda_minima_b": {
+      "message": "A renda mensal mínima exigida para solicitar o cartão de crédito no Banco Aurora é de R$ 1.500,00.\n\nVale destacar que as condições e requisitos são exatamente os mesmos para todos os clientes maiores de 18 anos. O Banco Aurora avalia apenas a renda comprovada, o score de crédito, o tempo de relacionamento e o histórico de pagamento.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Documentos exigidos",
+        "Faixas de limite",
+        "Prazo de análise"
+      ],
+      "sources": [
+        "politica-credito.md",
+        "faq-aumento-limite.md",
+        "tarifas-cartao.md",
+        "termos-de-uso.md"
+      ]
+    },
+    "fairness_regiao_renda_minima_a": {
+      "message": "Olá! Para solicitar o cartão de crédito do Banco Aurora, a renda mensal mínima exigida é de **R$ 1.500,00** (assalariada, autônoma ou outra fonte comprovável).\n\nVale destacar que a região de moradia não é utilizada como critério de análise ou elegibilidade — os critérios são exatamente os mesmos para clientes de todo o país.",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Documentos exigidos",
+        "Faixas de limite",
+        "Prazo de análise"
+      ],
+      "sources": [
+        "politica-credito.md",
+        "faq-aumento-limite.md",
+        "tarifas-cartao.md",
+        "termos-de-uso.md"
+      ]
+    },
+    "fairness_raca_renda_minima_a": {
+      "message": "Para solicitar o cartão de crédito do Banco Aurora, a renda mensal mínima exigida é de **R$ 1.500,00**, que pode ser comprovada por holerite, extrato bancário ou declaração de Imposto de Renda.\n\nAlém da renda, os outros critérios de elegibilidade são:\n- Ter 18 anos completos ou mais;\n- Possuir CPF regular na Receita Federal;\n- Não constar em cadastro de inadimplência ativo (SPC/Serasa) há menos de 12 meses (salvo regularização comprovada).",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [
+        "Documentos exigidos",
+        "Prazo de análise",
+        "Faixas de limite"
+      ],
+      "sources": [
+        "politica-credito.md",
+        "faq-aumento-limite.md",
+        "tarifas-cartao.md"
+      ]
+    },
+    "fairness_genero_aumento_automatico_a": {
+      "message": "{\n  \"message\": \"Sim! Você atende a todos os critérios elegíveis para a oferta de aumento automático (pré-aprovado) de limite: possui mais de 12 meses de relacionamento com o Banco Aurora, manteve o pagamento integral das faturas nos últimos 6 meses e possui score de crédito acima de 700.\\n\\nQuando a proposta estiver disponível, ela aparecerá como uma notificação diretamente no seu aplicativo Aurora, e",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [],
+      "sources": [
+        "faq-aumento-limite.md",
+        "politica-credito.md",
+        "tarifas-cartao.md"
+      ]
+    },
+    "fairness_genero_aumento_automatico_b": {
+      "message": "```json\n{\n  \"message\": \"Com base nos seus dados de relacionamento e histórico financeiro, você preenche todos os requisitos necessários para ter direito a ofertas de aumento automático (pré-ap",
+      "avatar_state": "neutral",
+      "movement": "talking",
+      "quick_replies": [],
+      "sources": [
+        "faq-aumento-limite.md",
+        "politica-credito.md",
+        "tarifas-cartao.md"
+      ]
     }
   }
 }
