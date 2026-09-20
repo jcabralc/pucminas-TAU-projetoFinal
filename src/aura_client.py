@@ -9,7 +9,10 @@ import requests
 TIMEOUT_PADRAO = 900 #180
 MARGEM_SEGURANCA_TOKEN_SEGUNDOS = 25 * 60  # token expira em 30 min
 MENSAGEM_COTA_ESGOTADA = "cota da api do provedor de ia esgotada"
-MENSAGEM_ERRO_INTERNO = "ocorreu um erro ao processar sua mensagem"
+MENSAGENS_ERRO_INTERNO = (
+    "ocorreu um erro ao processar sua mensagem",
+    "ops, demorei demais para responder",
+)
 
 
 class AuraAPIError(RuntimeError):
@@ -91,7 +94,7 @@ class AuraClient:
 
             if MENSAGEM_COTA_ESGOTADA in texto:
                 raise AuraQuotaExhausted(payload.get("message", ""))
-            if MENSAGEM_ERRO_INTERNO in texto:
+            if any(mensagem in texto for mensagem in MENSAGENS_ERRO_INTERNO):
                 raise AuraServerError(payload.get("message", ""))
 
             return payload
